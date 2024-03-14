@@ -5,7 +5,9 @@ on:
       file_key:
         description: 'The file key of the Figma file to be updated'
         required: true
-
+runs:
+  using: 'node20'
+  main: 'src/sync_tokens_to_figma.ts'
 jobs:
   sync-tokens-to-figma:
     runs-on: ubuntu-latest
