@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '21.7.1'
 
@@ -19,10 +19,13 @@ jobs:
         run: npm install -g npm
 
       - name: Clone repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
+
+      - name: Compile TypeScript
+        run: npm run build
 
       - name: Sync tokens to Figma file
         run: npm run sync-tokens-to-figma
