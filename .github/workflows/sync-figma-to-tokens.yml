@@ -29,7 +29,8 @@ jobs:
 
       - name: Compile TypeScript
         run: npm run build
-
+      - name: Test
+        run: ls
       - name: Sync variables in Figma file to tokens
         run: npm run sync-figma-to-tokens -- --output tokens
         env:
