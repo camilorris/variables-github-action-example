@@ -4,8 +4,8 @@
   "scripts": {
     "prettier:check": "prettier --check src/",
     "build": "tsc --outDir dist",
-    "sync-tokens-to-figma": "ts-node-esm dist/sync_tokens_to_figma.js",
-    "sync-figma-to-tokens": "ts-node-esm dist/sync_figma_to_tokens.js",
+    "sync-tokens-to-figma": "ts-node dist/sync_tokens_to_figma.js",
+    "sync-figma-to-tokens": "ts-node dist/sync_figma_to_tokens.js",
     "test": "jest"
   },
   "dependencies": {
