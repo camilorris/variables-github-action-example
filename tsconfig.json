@@ -3,7 +3,7 @@
     "module": "esnext",
     "target": "es2015",
     "sourceMap": true,
-    "moduleResolution": "node16",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
@@ -16,5 +16,7 @@
     "removeComments": true,
     "skipLibCheck": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }
