@@ -14,7 +14,7 @@ jobs:
       pull-requests: write
     steps:
       - name: Install Node.js
-        uses: actions/setup-node
+        uses: actions/setup-node@v4
         with:
           node-version: '21.7.1'
 
@@ -22,7 +22,7 @@ jobs:
         run: npm install -g npm
 
       - name: Clone repo
-        uses: actions/checkout
+        uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
